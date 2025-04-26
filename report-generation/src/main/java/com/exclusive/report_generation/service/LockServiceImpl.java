@@ -10,7 +10,6 @@ import java.util.concurrent.TimeUnit;
 public class LockServiceImpl implements LockService{
     private final RedissonClient redissonClient;
 
-    private static final String REPORT_LOCK_KEY = "report:generate:lock";
     private static final long WAIT_TIME_SEC = 5;
     private static final long LEASE_TIME_SEC = 30;
 
